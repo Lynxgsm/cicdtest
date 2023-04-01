@@ -7,6 +7,6 @@ it("App test", async () => {
   render(<App />);
   expect(screen.queryByText("AILI FIDA Aliotti Christino")).toBeVisible();
 
-  await userEvent.click(screen.getByText("count is 0"));
+  await userEvent.click(screen.getByText("count is 1"));
   expect(screen.queryByText("count is 1")).toBeVisible();
 });
